@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background: #111;
+    color: white;
+}
+
+.logo {
+    text-align: center;
+    flex: 1;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.icons span {
+    margin-left: 10px;
+}
+
+.hero {
+   
+    text-align: center;
+    padding: 80px;
+    background: #eee;
+    
+}
+
+.grid {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    flex: 1;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background: #222;
+    color: white;
+    padding: 20px;
+}
+
+/* Floating button */
+#topBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* Responsive */
+@media(max-width: 768px){
+    .grid {
+        flex-direction: column;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+}
